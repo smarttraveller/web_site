@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<link rel="Stylesheet" href="default.css" type="text/css" media="screen" />
+<link rel="Stylesheet" href="human.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="DOMAlert.js"></script>
+	<script type="text/javascript">
+	/*<![CDATA[*/
+		function doAlert(parent)
+		{
+			var msg = new DOMAlert(
+			{
+				title: 'Input Error',
+				text: 'Name field can not be empty.',
+				skin: 'default',
+				width: 300,
+				height: 30,
+				ok: {value: true, text: 'OK', onclick: showValue},
+				//cancel: {value: false, text: 'No', onclick: showValue }
+			});
+			msg.show();
+		};
+		
+		function doAlert2(parent)
+		{
+			var msg = new DOMAlert(
+			{
+				title: 'Input Error',
+				text: 'Email field can not be empty.',
+				skin: 'default',
+				width: 300,
+				height: 30,
+				ok: {value: true, text: 'Yes', onclick: showValue},
+				//cancel: {value: false, text: 'No', onclick: showValue }
+			});
+			msg.show();
+		};
+		
+		function showValue(sender, value)
+		{
+			sender.close();
+			var newMsg = new DOMAlert({skin: 'default', width: 200});
+			//newMsg.show("Your response", "You pressed " + value);
+		}
+		
+		
+	/*]]>*/
+	</script>
+	<title>Test</title>
+</head>
+<body>
+<div>
+<input class="field" type="text" name="log" id="log" value="" size="23" onclick="doAlert();"/>
+<input class="field" type="text" name="log" id="email" value="" size="23" onclick="doAlert2();"/>
+</div>
+</body>
+</html>
