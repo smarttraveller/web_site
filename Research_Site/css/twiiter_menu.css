@@ -1,0 +1,29 @@
+#sign_box_user
+{
+    width:210px; background-color:#999; border:solid 1px #5ea0c1; padding:8px;position:absolute;
+    display:none; height:80px;
+    -moz-border-radius-topright:6px;-moz-border-radius-bottomleft:6px;-moz-border-radius-bottomright:6px;-webkit-border-top-right-radius:6px;-webkit-border-bottom-left-radius:6px;-webkit-border-bottom-right-radius:6px;
+    }
+    #sign_box_user a{ font-size:12px; color:#006699; font-weight:normal; text-decoration:underline;}
+    #sign_box_user a:hover{ font-size:12px; color:#006699; text-decoration:underline;font-weight:normal}
+    .sign_in
+    {
+    background-color:#999;
+    border:solid 1px #5ea0c1;
+    padding:6px;
+}
+
+#sign_box_admin
+{
+    width:210px; background-color:#999; border:solid 1px #5ea0c1; padding:8px;position:absolute;
+    display:none; height:80px;
+    -moz-border-radius-topright:6px;-moz-border-radius-bottomleft:6px;-moz-border-radius-bottomright:6px;-webkit-border-top-right-radius:6px;-webkit-border-bottom-left-radius:6px;-webkit-border-bottom-right-radius:6px;
+    }
+    #sign_box_admin a{ font-size:12px; color:#006699; font-weight:normal; text-decoration:underline;}
+    #sign_box_admin a:hover{ font-size:12px; color:#006699; text-decoration:underline;font-weight:normal}
+    .sign_in
+    {
+    background-color:#999;
+    border:solid 1px #5ea0c1;
+    padding:6px;
+}
